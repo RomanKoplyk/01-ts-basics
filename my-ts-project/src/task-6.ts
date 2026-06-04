@@ -1,7 +1,9 @@
-function getFirstElement(arr) {
-  return arr[0];
-}
+{
+  function getFirstElement<T>(arr: T[]): T {
+    return arr[0];
+  }
 
-getFirstElement([1, 2, 3]);           // 1
-getFirstElement(["a", "b", "c"]);     // "a"
-getFirstElement([true, false, true]); // true
+  console.log("Task 6 (numbers):", getFirstElement([1, 2, 3])); // Виведе: 1
+  console.log("Task 6 (strings):", getFirstElement(["a", "b", "c"])); // Виведе: "a"
+  console.log("Task 6 (booleans):", getFirstElement([true, false, true])); // Виведе: true
+}
